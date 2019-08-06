@@ -11,10 +11,12 @@
 	<%="Preencha os dados abaixo:"%>
 
 	<form action="receber.jsp">
-		<input type="text" id="nome" name="nome"></br> <input type="text"
-			id="sobrenome" name="sobrenome"></br> <input type="text"
-			id="email" name="email"></br> <input type="submit" value="enviar"></input>
+		<input type="text" id="nome" name="nome"></br> 
+		<input type="text" id="sobrenome" name="sobrenome"></br> 
+		<input type="text" id="email" name="email"></br> 
+		<input type="submit" value="enviar"></input>
 	</form>
-
+	<%!int cont = 2;%>
+	<%=cont%>
 </body>
 </html>
