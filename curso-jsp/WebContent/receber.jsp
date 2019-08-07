@@ -7,7 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%="Nome: " + request.getParameter("nome") + " Sobrenome: " + request.getParameter("sobrenome")
-					+ " E-mail: " + request.getParameter("email")%>
+	<%="Nome: " + request.getParameter("nome") + "</br>" + " Sobrenome: "
+					+ request.getParameter("sobrenome") + "</br>" + " E-mail: " + request.getParameter("email")%>
+	</p>
+	<%
+		response.sendRedirect("http://www.google.com.br");
+	%>
+
 </body>
 </html>

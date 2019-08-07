@@ -11,12 +11,19 @@
 	<%="Preencha os dados abaixo:"%>
 
 	<form action="receber.jsp">
-		<input type="text" id="nome" name="nome"></br> 
-		<input type="text" id="sobrenome" name="sobrenome"></br> 
-		<input type="text" id="email" name="email"></br> 
-		<input type="submit" value="enviar"></input>
+		<input type="text" id="nome" name="nome"></br> <input type="text"
+			id="sobrenome" name="sobrenome"></br> <input type="text"
+			id="email" name="email"></br> <input type="submit" value="enviar"></input>
 	</form>
-	<%!int cont = 2;%>
+	<%!int cont = 2;
+
+	public int retorna(int n) {
+		return n * 3;
+	}%>
 	<%=cont%>
+	</br>
+	<%=retorna(8)%>
+	</br>
+	<%=application.getInitParameter("estado")%>
 </body>
 </html>
